@@ -95,7 +95,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
 
             const SizedBox(
-              height: 14.0,
+              height: 18.0,
             ),
 
            Row(
@@ -201,11 +201,75 @@ class _MyHomePageState extends State<MyHomePage> {
                 )
               ],
             ),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Container(
+                  color: Colors.black54,
+                  child: Text(art.description,
+                  style: const TextStyle(
+                    color: Colors.white70
+                  ),),
+                )
 
+              ],
+            ),
+            Padding(
+              padding: EdgeInsets.all(30),
+              child: TextButton(onPressed: () {},
+                  style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all<Color>(Colors.grey),
+                    foregroundColor: MaterialStateProperty.all<Color>(Colors.grey),
+                    overlayColor: MaterialStateProperty.resolveWith<Color?>(
+                          (Set<MaterialState> states) {
+                        if (states.contains(MaterialState.hovered)) {
+                          return Colors.red.withOpacity(0.04);
+                        }
+                        if (states.contains(MaterialState.focused) ||
+                            states.contains(MaterialState.pressed)) {
+                          return Colors.red.withOpacity(0.12);
+                        }
+                        return null; // Defer to the widget's default.
+                      },
+                    ),
+                  ),
+                  child: const Text("Place a bid",
+                  style: TextStyle(
+                    color: Colors.black54
+                  ),)
+                  ),
+            ),
+            Padding(
+              padding: EdgeInsets.all(11),
+              child: TextButton(onPressed: () {},
+                  style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all<Color>(Colors.grey),
+                    foregroundColor: MaterialStateProperty.all<Color>(Colors.grey),
+                    overlayColor: MaterialStateProperty.resolveWith<Color?>(
+                          (Set<MaterialState> states) {
+                        if (states.contains(MaterialState.hovered)) {
+                          return Colors.red.withOpacity(0.04);
+                        }
+                        if (states.contains(MaterialState.focused) ||
+                            states.contains(MaterialState.pressed)) {
+                          return Colors.red.withOpacity(0.12);
+                        }
+                        return null; // Defer to the widget's default.
+                      },
+                    ),
+                  ),
+                  child: const Text("Add to list",
+                    style: TextStyle(
+                        color: Colors.black54
+                    ),)
+              ),
+            ),
           ],
         ),
       ),
     );
+
+
 
 
 

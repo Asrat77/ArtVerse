@@ -5,6 +5,7 @@ class Art{
   String deadLine;
   double currentBid;
   String imageUrl;
+  String description;
 
 
   Art(
@@ -14,6 +15,7 @@ class Art{
       this.deadLine,
       this.currentBid,
       this.imageUrl,
+      this.description
       );
 
   static List<Art> samples = [
@@ -24,7 +26,11 @@ class Art{
         '20/10/2023',
         970000,
         'assets/self-portrait.jpg',
-
+            '''Vincent Willem van Gogh was a 
+          Dutch Post-Impressionist painter
+          one of the most who posthumously became 
+          famous and influential 
+          figures in Western art history. ''',
         ),
     Art(
       'van gogh 2',
@@ -33,6 +39,10 @@ class Art{
       '20/10/2023',
       220000,
       'assets/gogh-vincent-van.jpg',
+      '''Vincent Willem van Gogh was a 
+          Dutch Post-Impressionist painter.
+           ''',
+
 
     ),
     Art(
@@ -42,6 +52,7 @@ class Art{
       '20/10/2023',
       22000,
       'assets/bob-ross.jpg',
+        'This is a very very very very very very very very very very very Long description',
 
     ),
     Art(
@@ -50,7 +61,8 @@ class Art{
       '20/10/1987',
       '20/10/2023',
       42000,
-      'assets/bob-ross2.jpg',
+      'assets/bob-ross3.jpeg',
+        'This is a very very very very very very very very very very very Long description',
 
     ),
 
