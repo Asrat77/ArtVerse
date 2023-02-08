@@ -52,17 +52,18 @@ class Art{
       '20/10/2023',
       22000,
       'assets/bob-ross.jpg',
-        'This is a very very very very very very very very very very very Long description',
+        '''-''',
 
     ),
     Art(
-      'bob ross 2',
-      'Bob Ross',
-      '20/10/1987',
+      'michel',
+      'Jean michel Basq',
+      '20/10/1999',
       '20/10/2023',
       42000,
-      'assets/bob-ross3.jpeg',
-        'This is a very very very very very very very very very very very Long description',
+      'assets/michel.jpg',
+        '''This is a very very 
+        very very very very Long description''',
 
     ),
 
