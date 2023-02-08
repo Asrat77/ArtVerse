@@ -66,6 +66,16 @@ class Art{
         very very very very Long description''',
 
     ),
+    Art(
+      'Jojo',
+      'Yohanna Getachew',
+      '20/10/1999',
+      '20/10/2023',
+      42000,
+      "assets/jojo.jpg",
+      '''This is Art''',
+
+    ),
 
   ];
 

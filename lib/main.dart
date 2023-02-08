@@ -25,7 +25,7 @@ class auctionApp extends StatelessWidget {
 
       ),
         ),
-      home: const MyHomePage(title: 'Home'),
+      home: const MyHomePage(title: 'Art Auction'),
 
 
 
@@ -91,7 +91,9 @@ class _MyHomePageState extends State<MyHomePage> {
             ClipRRect(
               borderRadius: BorderRadius.circular(40.0),
               child:
-              Image(image: AssetImage(art.imageUrl)),
+              Image(image: AssetImage(art.imageUrl),
+              height: 300,
+              width: 300,),
             ),
 
             const SizedBox(
@@ -240,7 +242,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
             ),
             Padding(
-              padding: EdgeInsets.all(11),
+              padding: EdgeInsets.all(2),
               child: TextButton(onPressed: () {},
                   style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all<Color>(Colors.grey),
